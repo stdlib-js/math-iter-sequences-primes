@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-sequences-primes
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterPrimesSeq = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-primes@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterPrimesSeq = require( 'path/to/vendor/umd/math-iter-sequences-primes/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-primes@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterPrimesSeq;
-})();
-</script>
+var iterPrimesSeq = require( '@stdlib/math-iter-sequences-primes' );
 ```
 
 #### iterPrimesSeq( \[options] )
@@ -146,13 +138,8 @@ var bool = it.next().done;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-primes@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var iterPrimesSeq = require( '@stdlib/math-iter-sequences-primes' );
 
 // Create an iterator:
 var opts = {
@@ -169,11 +156,6 @@ while ( true ) {
     }
     console.log( v.value );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -277,11 +259,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/iter/sequences/composites]: https://github.com/stdlib-js/math-iter-sequences-composites/tree/umd
+[@stdlib/math/iter/sequences/composites]: https://github.com/stdlib-js/math-iter-sequences-composites
 
-[@stdlib/math/iter/sequences/integers]: https://github.com/stdlib-js/math-iter-sequences-integers/tree/umd
+[@stdlib/math/iter/sequences/integers]: https://github.com/stdlib-js/math-iter-sequences-integers
 
-[@stdlib/math/iter/sequences/positive-integers]: https://github.com/stdlib-js/math-iter-sequences-positive-integers/tree/umd
+[@stdlib/math/iter/sequences/positive-integers]: https://github.com/stdlib-js/math-iter-sequences-positive-integers
 
 <!-- </related-links> -->
 
