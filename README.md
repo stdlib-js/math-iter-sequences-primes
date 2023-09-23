@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterPrimesSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-primes@deno/mod.js';
+import iterPrimesSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-primes@v0.1.0-deno/mod.js';
 ```
 
 #### iterPrimesSeq( \[options] )
@@ -134,7 +134,7 @@ var bool = it.next().done;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import iterPrimesSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-primes@deno/mod.js';
+import iterPrimesSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-primes@v0.1.0-deno/mod.js';
 
 // Create an iterator:
 var opts = {
